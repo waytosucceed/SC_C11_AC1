@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scratch-AC1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    h1{
+          text-align: center;
+          font-family: 'Comic Sans MS', cursive, sans-serif; 
+      }
+   </style>
+  <body>
+    <div class="header">
+      <img src="./logo/Logo.png" width="5%" class="img-responsive logo1" />
+
+      <img src="./logo/header.png" class="img-responsive logo2" />
+      <button class="toggle-sidenav" onclick="toggleSidenav()">☰</button>
+      <!-- Toggle Button -->
+    </div>
+    <div style="text-align: center;">
+      <H1 style="color: white;">Function</H1>
+    </div>
+    <div class="container">
+      <!-- Left Side Navigation -->
+      <div class="sidenav">
+        <button onclick="showContent('coordinates')">
+          Function
+      </button>
+        <button onclick="showContent('changing-costume')">
+          Charge Up!
+        </button>
+        <!-- <button onclick="showContent('repeat')">
+            MOVING SPRITES
+        </button> -->
+    </div>
+    
+
+      <!-- Right Side Content -->
+      <div class="content">
+     <!-- SPRITE -->
+     <div id="coordinates" class="content-section" style="display: none;">
+      <h2>Function</h2>
+      <div style="text-align: start;">
+        <P>
+          In Scratch, when we create our own block, it's like making a new command.
+<br><br>In programming, this is called a function. A function is a set of instructions that we can use whenever we need it!In Scratch, when we create our own block, it's like making a new command.
+        </P>
+
+
+      
+      
+          
+          
+      
+      
+  
+
+<!-- CHANGING COSTUME OF THE SPRITE -->
+
+
+
+        
+      </div>
+
+    </div>
+    <div id="changing-costume" class="content-section" style="display: none;">
+      <!-- <h2 style="color: #1230ae; font-weight: bold;">Make a Block</h2> -->
+      
+      <P>
+        Let’s say you are creating a game where the robot needs to charge up its energy before it can attack.
+<br><br>First, we need to create a variable that stores whether the robot is charged or not.
+<br><br>Let’s create a variable named ‘charged’.When the green flag is clicked we will set ‘charged’ to ‘no’(because the robot starts without energy).
+<br><img src="./assets/images/1.png" alt="" width="30%">
+
+<br><br>Let’s create a block for charging the Robot.
+<br><br>To create a new block you need to:
+
+      </P>
+      <ul>
+        <li>Go to ‘My Blocks’</li>
+        <li>Click on Make a Block </li>
+        <li>Name your block. We will name this block ‘charge up’.</li>
+      </ul>
+      <div style="display: flex;">
+      <div style="width: 40%;">
+        <img src="./assets/images/2.png" alt="" width="70%">
+      </div>
+      <div style="width: 60%;">
+        <img src="./assets/images/3.png" alt="" width="80%">
+      </div>
+    </div>
+      <p>
+        When we create a new block in Scratch, we are teaching Scratch a new command that it didn’t know before. 
+        <br><br>As soon as we create a new block, you will find a ‘define’ block in the workspace area. Here we add all the steps that this block would perform.
+        <br><br>In the ‘define charge up’ block we will add steps to charge the Robot. We are telling what ‘charge up’ means.
+        <br><br>
+We will : 
+
+      </p>
+      <ul>
+        <li>Change the color effect of the robot.</li>
+        <li>Show a ‘Charging’ message for 3 seconds.</li>
+        <li>Set the ‘charged’ variable to ‘yes’.</li>
+        <li>Clear all effects.</li>
+      </ul>
+      <br><img src="./assets/images/4.png" alt="" width="50%">
+      <br><br>
+      <div style="display: flex;">
+        <div style="width: 40%;">
+          <img src="./assets/images/5.png" alt="" width="50%">
+        </div>
+        <div style="width: 60%;">
+          <p>
+            Clears all graphic effects on the sprite.
+          </p>
+        </div>
+      </div>
+      <p>
+        We have used clear graphic effects to remove the effects since we want the color effect to be there only while it's charging.
+        
+        <br><br>Defining a block doesn’t automatically run it. It is just like teaching Scratch something new and it remembers it but it won’t do anything until we use it in the script.
+        <br><br>To make the custom block run, we need to drag it from ‘My Blocks’ and place it in our script, just like other Scratch blocks. We can connect it to different events to trigger it at the right time.
+        <br><br>Using a block like this is called a function call in programming.
+        <br><br>We have taught Scratch what ‘charge up’ means. Now, whenever we want the Robot to charge up, we can just use the ‘charge up’ block available in ‘My Blocks’ and it will automatically run all the commands inside the ‘define charge up’ block. We can use it as many times as we want without rewriting all the steps again
+        <br><br>Let’s make the Robot charge up when I press the up arrow key.
+
+      </p>
+      <div style="display: flex;">
+        <div style="width: 40%;">
+          <img src="./assets/images/7.png" alt="" width="70%">
+        </div>
+        <div style="width: 60%;">
+          <img src="./assets/images/6.png" alt="" width="100%">
+        </div>
+      </div>
+  </div>
+  
+  <!-- REPEAT -->
+  <div id="repeat" class="content-section" style="display: none;">
+    <h2 style="color: #1230ae; font-weight: bold;">Changing color on a collision</h2>
+    
+    <p style="font-size: 1.4rem;">
+      Now let’s change the color when one bus touches another.
+      <br><br><b>Bus1:</b>
+    </p>
+    <br><img src="./assets/images/11.png" alt="" width="50%">
+  
+    <p>
+      <b>Bus2:</b>
+    </p>
+    <br><img src="./assets/images/10.png" alt="" width="50%">
+  
+  </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
